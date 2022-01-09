@@ -12,4 +12,4 @@ sudo ./install.sh
 ```
 
 #Fork from:
-https://git.wieser-hv.de/smilebasti/roxy-wi-installer-script
+https://github.com/PREngineer/Roxy-Wi_Installer
