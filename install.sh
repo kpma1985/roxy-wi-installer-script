@@ -51,7 +51,7 @@ echo "Downloading latest version of Roxy-Wi..."
 sudo git clone https://github.com/hap-wi/roxy-wi.git /var/www/haproxy-wi
 echo ""
 echo "Fixing file permissions..."
-sudo chown -R www-data:www-data haproxy-wi
+sudo chown -R www-data:www-data /var/www/haproxy-wihaproxy-wi
 #sudo chmod -R 777 haproxy-wi
 echo ""
 echo "Copying configuration to Apache..."
