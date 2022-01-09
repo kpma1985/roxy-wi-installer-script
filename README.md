@@ -5,7 +5,7 @@ This script install the Roxy-Wi web interface for managing HA-Proxy servers in a
 # Install
 
 ```
-git clone https://github.com/smilebasti/Roxy-Wi_Installer.git ~/Roxy-Wi_Installer
+git clone https://git.wieser-hv.de/smilebasti/roxy-wi-installer-script.git ~/Roxy-Wi_Installer
 cd ~/Roxy-Wi_Installer
 chmod +x install.sh
 sudo ./install.sh
