@@ -8,7 +8,7 @@ Support the project
 # Install
 
 ```
-git clone https://github.com/PREngineer/Roxy-Wi_Installer.git ~/Roxy-Wi_Installer
+git clone https://github.com/smilebasti/Roxy-Wi_Installer.git ~/Roxy-Wi_Installer
 cd ~/Roxy-Wi_Installer
 chmod +x install.sh
 sudo ./install.sh
