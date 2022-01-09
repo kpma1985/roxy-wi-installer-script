@@ -51,11 +51,11 @@ echo "Downloading latest version of Roxy-Wi..."
 sudo git clone https://github.com/hap-wi/roxy-wi.git /var/www/haproxy-wi
 echo ""
 echo "Fixing file permissions..."
-sudo chown -R www-data:www-data haproxy-wi
-sudo chmod -R 777 haproxy-wi
+sudo chown -R www-data:www-data /var/www/haproxy-wi
+sudo chmod -R 777 /var/www/haproxy-wi
 echo ""
 echo "Copying configuration to Apache..."
-sudo cp haproxy-wi/config_other/httpd/roxy-wi_deb.conf /etc/apache2/sites-available/roxy-wi.conf
+sudo cp /var/www/haproxy-wi/config_other/httpd/roxy-wi_deb.conf /etc/apache2/sites-available/roxy-wi.conf
 echo ""
 echo "Enabling Apache site..."
 sudo a2ensite roxy-wi.conf
@@ -63,7 +63,7 @@ sudo a2enmod cgid
 sudo a2enmod ssl
 echo ""
 echo "Installing Roxy-Wi dependencies..."
-pip3 install -r haproxy-wi/config_other/requirements_deb.txt
+pip3 install -r /var/www/haproxy-wi/config_other/requirements_deb.txt
 
 echo "#######################################"
 echo ""
