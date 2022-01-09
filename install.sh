@@ -118,6 +118,19 @@ cd /var/www/haproxy-wi/app
 ./create_db.py
 sudo chown -R www-data:www-data /var/www/haproxy-wi/
 
+echo "#######################################"
+echo ""
+echo "Install ansible"
+echo ""
+echo "#######################################"
+echo ""
+sudo apt-get install sshpass
+sudo mkdir /var/www/.ansible
+sudo touch /var/www/.ansible_galaxy
+sudo mkdir /var/www/.ssh
+sudo chown www-data:www-data /var/www/.*
+sudo echo "www-data          ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers
+
 echo "########################################################"
 echo ""
 echo "Roxy-Wi for HA Proxy has been successfully installed."
